@@ -1,0 +1,27 @@
+
+{% extends "base.html" %} 
+{% block content %}
+  {% for post in post_list %}
+            <section >
+                 
+                    <a style= 'text-decoration: none;'href="{% url 'post_detail' post.slug  %}"  ><h1 align="center">{{ post.title }}</h1> </a>
+                
+                     
+              </section>
+            {% endfor %}
+            {% if is_paginated %}
+  <nav aria-label="Page navigation conatiner"></nav>
+  <ul class="pagination justify-content-center">
+    {% if page_obj.has_previous %}
+    <li><a  href="?page={{ page_obj.previous_page_number }}" class="previousnav"> Назад</a></li>
+
+    {% endif %}
+    {% if page_obj.has_next %}
+    <li><a a href="?page={{ page_obj.next_page_number }}" class="nextnav">Далее</a></li>
+     {% endif %}
+  </ul>
+  </nav>
+</div>
+{% endif %}
+{% endblock content %}
+

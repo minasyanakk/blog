@@ -1,0 +1,16 @@
+
+{% extends "base.html" %} 
+{% block content %}
+<section>
+  <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+
+{{ object.content | safe  }}
+
+ {% if post.cover.url|length > 0 %}
+   <img src="{{ post.cover.url}}"width="480" alt="{{ post.title }}">
+{% else %}
+  {% endif %}
+  <li><a href="{{request.META.HTTP_REFERER}}"  class="next" >Назад</a></li>
+</section>
+{% endblock content %}
+

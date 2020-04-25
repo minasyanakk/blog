@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+    {% load static %}
+  <meta charset="UTF-8">
+  <title>{{ object.title }}</title>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+ {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+<!-- partial -->
+  
+</body>
+
+</html>

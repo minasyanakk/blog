@@ -1,0 +1,141 @@
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #c52e1f;
+  color: white;
+}
+
+.previousnav {
+   position: absolute;
+  bottom: 5%;
+  left: : 10%;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.nextnav {
+  background-color: #c52e1f;
+  color: white;
+   position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+.round {
+  border-radius: 50%;
+}
+html { font-size: 100%; 
+  line-height: 1;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+@font-face {
+    font-family: test; /* Гарнитура шрифта */
+    src: url(./test.ttf); /* Путь к файлу со шрифтом */}
+
+body { font-family: 'Lora', serif; color: #333; }
+h1, h2, h3 { font-weight: 100; }
+section { width: 30em; 
+  margin: 0 auto;
+}
+section img {  
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+   width:100%;
+}
+p { font-size: 1.063em; /* 17px / 16px = 1.063em */ ы
+    line-height: 1.25; /* 20px / 16px = 1.25em */
+}
+/* Typographic Scale 1.063 x 1.25 = 1.32875 rounded to 1.3 */
+h1 { font-size: 5.189em; /* 3 x 1.063 = 3.189 */ 
+  line-height: 1.0; /* 2.275 / 3.189 = 0.4*/ 
+  font-family: test;
+  letter-spacing: 5px;
+color: #c52e1f;
+
+}
+h2 { 
+  font-size: 2.126em; /* 2 x 1.063 = 2.126*/
+  line-height: 0.6; /* 1.3 / 2.126 = 0.6 */
+}
+p:nth-of-type(1):first-letter {
+  float: left;
+  color: #c52e1f;
+  padding: 0 6px 0 4px;
+  font-size: 109px;
+  line-height: 82px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+h1, h2, h3 { font-weight: 100; }
+section { width: 55em; 
+  margin: 0 auto;
+}
+ 
+p { font-size: 3.063em; /* 17px / 16px = 1.063em */ ы
+    line-height: 3.25; /* 20px / 16px = 1.25em */
+}
+/* Typographic Scale 1.063 x 1.25 = 1.32875 rounded to 1.3 */
+h1 { font-size: 15.189em; /* 3 x 1.063 = 3.189 */ 
+ }}
+
+
+
+
+/* iPhone 6 and 6 Plus */
+@media only screen
+  and (max-device-width: 640px),
+  only screen and (max-device-width: 667px),
+  only screen and (max-width: 480px)
+{
+
+
+h1, h2, h3 { font-weight: 100; }
+section { width: 55em; 
+  margin: 0 auto;
+}
+ 
+p { font-size: 3.043em; /* 17px / 16px = 1.063em */ ы
+    line-height: 3.15; /* 20px / 16px = 1.25em */
+}
+/* Typographic Scale 1.063 x 1.25 = 1.32875 rounded to 1.3 */
+h1 { font-size: 15.189em; /* 3 x 1.063 = 3.189 */ 
+ }
+
+ }
+
